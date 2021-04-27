@@ -361,11 +361,52 @@
                 </ul>
 
             </div>
-        <div>
+            <form class="footer-grid">
+                <h3 class="footer-title">Подпишитесь на рассылку</h3>
+                <input class="input-email" type="email" name="user-name-subscribe" placeholder="E-mail" pattern="">
+                <button class="button" type="submit">Подписаться</button>
+            </form>
+        </div>
     </footer>
     
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
+            <h3 class="modal-tytle" >Оставьте свои данные, мы вам перезвоним</h3>
+            <form class="form">
+                <label class="form-label" for="user-name">
+                    <span class="form-tytle">Имя</span>
+                    <input class="form-field" type="text" name="user-name" id="user-name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" autofocus="on">
+                    <svg class="form-label-icon">
+                        <use href="./images/svg/sprite.svg#icon-personform" ></use>
+                    </svg>
+                </label>
+                <label class="form-label" for="user-fone">
+                    <span class="form-tytle">Телефон</span>
+                    <input class="form-field" type="tel" name="user-fone" id="user-fone" pattern="">
+                    <svg class="form-label-icon">
+                        <use href="./images/svg/sprite.svg#icon-phoneform" ></use>
+                    </svg>
+                </label>
+                <label class="form-label" for="user-email">
+                    <span class="form-tytle">Почта</span>
+                    <input class="form-field" type="email" name="user-email" id="user-email" pattern="">
+                    <svg class="form-label-icon">
+                        <use href="./images/svg/sprite.svg#icon-emailform" ></use>
+                    </svg>
+                </label>
+                <label class="form-label" for="user-massage">
+                    <span class="form-tytle">Комментарий</span>
+                    <textarea class="form-field form-massage" name="user-massage" rows="6" id="user-massage" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="contract">
+                    <input class="contract-checkbox" type="checkbox" name="agreement" value="">
+                    <span class="contract-custom-checkbox"></span>
+                    <span contract-text>Соглашаюсь с рассылкой и принимаю</span>
+                    <a class="contract-link" href="">Условия договра</a>
+                </label>
+                <button class="button form-button" type="submit">Отправить</button>
+            </form>
+
             <button data-modal-close class="button-close" tybe="button"></button>
         </div>
     </div>
